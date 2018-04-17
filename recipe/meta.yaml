@@ -1,6 +1,6 @@
-{% set name = "tensorboardx" %}
+{% set name = "tensorboardX" %}
 {% set version = "1.0" %}
-{% set sha256 = "33d761b902dd3a3bc9b48d1a5921f6ee99878e612385e52826c12438c99741fe" %}
+{% set sha256 = "71e8cced4fba6c1aca2f945407b8cc3cbe1c1e52ab389a4cb11ebe50fce678fe" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/lanpa/tensorboard-pytorch/archive/v{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
